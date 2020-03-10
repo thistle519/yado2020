@@ -1,0 +1,11 @@
+.pic{
+    max-height: 500px;
+}
+
+
+
+@media (max-width: 576px) {
+    .table-content{
+        font-size: 12px;
+    }
+}

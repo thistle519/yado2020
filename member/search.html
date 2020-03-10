@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <title>委員用ページ | やどかり祭</title>
+    <meta name="description" content="5/29(金),3(土)に筑波大学で開催される「やどかり祭」の公式サイトです。">
+    <!--  ファビコン -->
+    <link rel="icon" href="img/icon.ico">
+
+    <!--viewpointの設定で、レスポンシブルになる-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--edgeで互換モードをつかわせない-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--OGP-->
+
+    <meta property="og:image" content="#" />
+    <!--SNSでシェアされたときの画像の絶対パス(URL)-->
+    <meta property="og:title" content="筑波大学やどかり祭 | ページ詳細" />
+    <!--ここもページごとに書いてください-->
+    <!-- <meta property="og:type" content="website" />トップページではこっちを使ってください -->
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="筑波大学やどかり祭2020" />
+    <meta property="og:description" content="5/29(金),3(土)に筑波大学で開催される「やどかり祭」の公式サイトです。" />
+    <!--Twitter-->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@yadosai" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/782b0a94e2.js" crossorigin="anonymous"></script>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,400&display=swap&subset=japanese"
+        rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+
+
+
+</head>
+
+<body ontouchstart=''>
+    <!-- <div class="test"></div> -->
+    <!-- navigation -->
+    <div class="fixed-top">
+        <nav class="navbar navbar-expand-md">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <i class="fas fa-bars"></i>
+            </button>
+            <a href="index.html"><img src="img/logo_demo_w_hiq.png" alt="" class="logo"></a>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="../index.html" class="nav-link">一般サイトトップ</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">委員サイトトップ</a></li>
+            </div>
+        </nav>
+    </div>
+    <!-- navigation -->
+    <section class="main" style="margin-top: 50px;">
+
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg tile is-round is-bg-white">
+                    <form action="#" method="post">
+                        <p>
+                            名前：<input type="text" name="name">
+                        </p>
+                        <p>
+                            部局：<select name="bukyoku" id="1">
+                                <option value="non">選択無し</option>
+                                <option value="zen">全装</option>
+                                <option value="sou">総務</option>
+                                <option value="sen">宣伝</option>
+                                <option value="gai">外渉</option>
+                                <option value="gai">設備</option>
+                                <option value="mog">模擬</option>
+                                <option value="kik">企画</option>
+                            </select>
+                        </p>
+                        <p>
+                            フロー：
+                            <select name="date">
+                                <option value="zenyasai">前夜祭</option>
+                                <option value="honsai">本祭</option>
+                            </select>
+
+                            <select name="furo-1">
+                                <option value="koutsuu">交通</option>
+                                <option value="himoji">火文字</option>
+                                <option value="yagairaibu">野外ライブ</option>
+                                <option value="gomi">ゴミフロー</option>
+                                <option value="5">外渉</option>
+                                <option value="6">設備</option>
+                                <option value="7">模擬</option>
+                                <option value="8">企画</option>
+                            </select>
+                            <select name="furo-2">
+                                <option value="koutsuu">交通</option>
+                                <option value="himoji">火文字</option>
+                                <option value="yagairaibu">野外ライブ</option>
+                                <option value="gomi">ゴミフロー</option>
+                                <option value="5">外渉</option>
+                                <option value="6">設備</option>
+                                <option value="7">模擬</option>
+                                <option value="8">企画</option>
+                            </select>
+                        </p>
+                        <p><input type="checkbox">今フローに入っていない。</p>
+                        <p>
+                            <button type="submit" class="btn" style="margin-right: 1em;">送信</button>
+                            <button type="reset" class="btn">リセット</button>
+
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="row justify-content-center">
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="js/search.js"></script>
+
+</body>
+
+</html>

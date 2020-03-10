@@ -1,0 +1,190 @@
+.jumbotron {
+  border-radius: 0rem;
+}
+
+.body {
+  font-size: 16px;
+}
+/*---carousel---*/
+.carousel-item {
+  height: 90vh;
+  position: relative;
+}
+
+.carousel-item h1 {
+  font-size: 500%;
+  text-shadow: 1px 1px 15px #000;
+  color: #ffffff;
+}
+
+.carousel-image-1 {
+  background-image: url("../img/image1.jpg");
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+}
+
+.carousel-image-2 {
+  background-image: url("../img/image2.jpg");
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+.carousel-image-3 {
+  background-image: url("../img/image3.jpg");
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+.carousel-image-4 {
+  background-image: url("../img/image5.jpg");
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+/*---carousel---*/
+.caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+/*hero*/
+
+/*Jumbotron*/
+.overview {
+  background-color: #707070 !important;
+  color: #ffffff;
+  padding: 1em;
+}
+.lead {
+  font-weight: 400;
+}
+/*Jumbotron*/
+
+/*top-tile*/
+.index-tile {
+  padding: 1em 0 0 0;
+}
+#index-tile1,
+#index-tile3 {
+  background-color: hsl(38,54%,72%);
+  border-bottom: solid 4px hsl(38,54%,65%);
+  color: hsl(199,84%,19%);
+}
+#index-tile1:hover,
+#index-tile3:hover {
+  background-color: hsl(38,54%,70%);
+}
+
+#index-tile2,
+#index-tile4 {
+  background-color: hsl(199,84%,19%);
+  border-bottom: solid 4px hsl(199,84%,12%);
+  color: hsl(38,54%,72%);
+}
+#index-tile2:hover,
+#index-tile4:hover {
+  background-color: hsl(199,84%,17%);
+}
+
+/*top-tile*/
+
+.index-tile {
+  box-shadow: 3px 5px 15px -3px black;
+}
+
+.index-tile:hover {
+  box-shadow: 0px 0px 0px 0px black;
+}
+
+
+.a-index-tile:hover {
+  text-decoration: none !important;
+}
+.is-bg-beige {
+  background-color: hsl(38,54%,72%);
+  border-bottom: solid 8px hsl(38,55%,64%);
+  color: hsl(199,84%,19%);
+}
+
+.is-bg-navy {
+  background-color: hsl(199,84%,19%);
+  border-bottom: solid 8px hsl(199,84%,15%);;
+  color: hsl(38,54%,72%);
+}
+
+.tile {
+  margin: 1em 3em;
+  padding: 1em 3em 1em 3em;
+}
+
+@media (max-width: 768px) {
+  .index-tile {
+    margin: 1em auto;
+  }
+  .index-tile-title {
+    font-size: 95%;
+  }
+  .tile{
+    padding: 1em 1.5em 1em 1.5em;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-image-1 {
+    background-image: url("../img/image1_mobile.jpg");
+  }
+  .carousel-image-2 {
+    background-image: url("../img/image2_mobile.jpg");
+  }
+  .carousel-image-3 {
+    background-image: url("../img/image4_mobile.jpg");
+  }
+  .carousel-image-4 {
+    background-image: url("../img/image5_mobile.jpg");
+  }
+  .index-tile-title {
+    font-size: 90%;
+  }
+
+  .lead {
+    font-weight: 300;
+  }
+  #index-tile1,
+  #index-tile4 {
+    background-color: hsl(38,54%,72%);
+    border-bottom: solid 4px hsl(38,54%,65%);
+    color: hsl(199,84%,19%);
+  }
+
+  #index-tile2,
+  #index-tile3 {
+    background-color: hsl(199,84%,19%);
+    border-bottom: solid 4px hsl(199,84%,12%);
+    color: hsl(38,54%,72%);
+  }
+  #index-tile1:hover,
+  #index-tile4:hover {
+    background-color: hsl(38,54%,70%);
+  }
+  #index-tile2:hover,
+  #index-tile3:hover {
+    background-color: hsl(199,84%,17%);
+  }
+}
+
+@media (max-width: 420px) {
+  .index-tile-title {
+    font-size: 85%;
+  }
+}

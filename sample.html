@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="UTF-8">
+  <title>やどかり祭-筑波大学宿舎祭-</title>
+  <meta name="description" content="5/29(金),3(土)に筑波大学で開催される「やどかり祭」の公式サイトです。">
+  <!--  ファビコン -->
+  <link rel="icon" href="img/icon.ico">
+
+  <!--viewpointの設定で、レスポンシブルになる-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--edgeで互換モードをつかわせない-->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!--OGP-->
+
+  <meta property="og:image" content="img/yadoOGP.png" />
+  <!--SNSでシェアされたときの画像の絶対パス(URL)-->
+  <meta property="og:title" content="筑波大学やどかり祭 | ページ詳細" />
+  <!--ここもページごとに書いてください-->
+  <!-- <meta property="og:type" content="website" />トップページではこっちを使ってください -->
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="筑波大学やどかり祭2020" />
+  <meta property="og:description" content="5/29(金),3(土)に筑波大学で開催される「やどかり祭」の公式サイトです。" />
+  <!--Twitter-->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@yadosai" />
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/782b0a94e2.js" crossorigin="anonymous"></script>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,400&display=swap&subset=japanese"
+    rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" href="css/style.css">
+    <!-- Jquery とload.jsを読み込み-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/load.js"></script>
+
+</head>
+
+<body ontouchstart=''>
+    <!-- navigation -->
+    <script>writeHeader();</script>
+    <!-- navigation -->
+
+
+  <section class="main" style="margin-top: 50px;">
+    <!--ナビゲーションバーの次のセクションではmargin-top:50px;指定しないと要素が被る-->
+    <!-- 汎用タイル -->
+    <!-- 横1枚タイル -->
+    <div class="row justify-content-center">
+      <div class="col-11 col-md tile is-round is-bg-white">
+        <section class="tile-content">
+          <p class="text-center tile-title col-title">横一枚タイル</p>
+          <p class="text-center">本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文</p>
+          <p class="text-center"><button type="button" class="btn" onclick="location.href='#'">くわしくみる</button>
+          </p>
+        </section>
+      </div>
+    </div>
+    <!-- 横1枚タイル -->
+
+    <!-- 複数枚タイル -->
+    <div class="row justify-content-center">
+      <div class="col-11 col-md tile is-round is-bg-white">
+        <section class="tile-content">
+          <p class="text-center tile-title col-title">枚数変化</p>
+          <p class="text-center"><img src="img/sample.jpg" class="img-fluid"></p>
+          <p>画像の幅はタイルの60%にしてみました</p>
+          <p class="text-center"><button type="button" class="btn" onclick="location.href='#'">くわしくみる</button>
+          </p>
+        </section>
+      </div>
+
+      <div class="col-11 col-md tile is-round is-bg-white">
+        <section class="tile-content">
+          <p class="text-center tile-title col-title">枚数変化</p>
+          <p>左よせ<br>
+            こっちの方が好きかな本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文<br>
+            <a href="#">本文中のアンカーのテスト</a></p>
+          <p class="text-center">中央寄せ<br>本文本文本文本文本文本文本文本文本文本文文<br class="mobile-br">モバイルでのみ改行されます。<br
+              class="mobile-br">本文本文本文本文本文本文本文本文本文本文本文本文本</p>
+        </section>
+      </div>
+    </div>
+    <!-- 複数枚タイル -->
+
+    <!-- 2枚固定タイル -->
+    <div class="row justify-content-center align-self-stretch">
+      <div class="col-11 col-md tile is-round is-bg-white">
+        <section class="tile-content">
+          <p class="text-center tile-title col-title"> タイル</p>
+          <p>タイルの高さを揃えたい<br>タイルの高さを揃えたい<br>タイルの高さを揃えたい<br>タイルの高さを揃えたい<br>タイルの高さを揃えたい<br>タイルの高さを揃えたい<br>タイルの高さを揃えたい<br>
+          </p>
+        </section>
+      </div>
+      <div class="col-11 col-md tile is-round is-bg-white">
+        <section class="tile-content">
+          <p class="text-center tile-title col-title">タイル</p>
+          <p>
+            モバイル<br class="mobile-br">では<br class="mobile-br">改行されます。
+            <br class="mobile-br">タブレット以上では<br class="mobile-br">改行されません<br
+              class="mobile-br">長い文長い文長い文長い文長い文長い文長い文長い文長い文長い文長い文長い文長い文長い文長い文長い文長い文長い文長い文長い文長い文長い文長い文長い文長い文長い文長い文長い文長い文長い文長い文長い文長い文長い文長い文長い文
+          </p>
+        </section>
+      </div>
+    </div>
+    <!-- 2枚固定タイル -->
+    <!-- 汎用タイル -->
+    <!-- tile colomn -->
+
+    <!-- Card layout-->
+    <!-- カードレイアウトページのタイトル　from tile colomn -->
+    <div class="row justify-content-center">
+      <div class="col-11 col-md tile is-round is-bg-white">
+        <section class="tile-content">
+          <p class="text-center tile-title col-title">ゆかこん出場チーム</p>
+          <p class="text-center">ゆかコンの説明<br><small>画像をマウスオーバーかタップで意気込みをよむことができます</small></p>
+          <p class="text-center"><button type="button" class="btn" onclick="location.href='#'">くわしくみる</button>
+          </p>
+
+        </section>
+      </div>
+    </div>
+    <!-- カードレイアウトページのタイトル -->
+
+    <!-- cards-->
+    <div class="row row justify-content-center">
+      <!-- カード要素 -->
+      <div class="card" style="width: 20rem;">
+        <div class="card-thumbnail">
+          <figure class="card-img-wrapper">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="" src="img/sample.jpg">
+          </figure>
+          <span class="card-more-text">
+            誰もが一度はあこがれる青春の1コマ。<br>
+            恋するも良し!<br>
+            妄想を重ねこんな物語を作っちゃうも良し!<br class="mobile-br">
+            だって人間だもの。<br>
+            これはありえたかもしれない1つの物語。<br>
+          </span>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">人間っていいな</h5>
+          <p class="card-text">No1.人間学群</p>
+        </div>
+      </div>
+      <!-- カード要素 -->
+
+      <div class="card" style="width: 20rem;">
+        <div class="card-thumbnail">
+          <figure class="card-img-wrapper">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="" src="img/sample.jpg">
+          </figure>
+          <span class="card-more-text">
+            Hey!Collage of International Study 37期がクールな
+            洋楽でセクシーに踊ってやど祭にグローバルな風を
+            吹かせます!Are you ready?Here we go!
+          </span>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">カードタイトル</h5>
+          <p class="card-text">シンプルな説明文</p>
+          <p class="text-center"><button type="button" class="btn" onclick="location.href='#'">くわしくみる</button>
+          </p>
+
+        </div>
+      </div>
+      <div class="card" style="width: 20rem;">
+        <div class="card-thumbnail">
+          <figure class="card-img-wrapper">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="" src="img/sample.jpg">
+          </figure>
+          <span class="card-more-text">
+            Hey!Collage of International Study 37期がクールな
+            洋楽でセクシーに踊ってやど祭にグローバルな風を
+            吹かせます!Are you ready?Here we go!
+          </span>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">カードタイトル</h5>
+          <p class="card-text">シンプルな説明文</p>
+          <p class="text-center"><button type="button" class="btn" onclick="location.href='#'">くわしくみる</button>
+          </p>
+
+        </div>
+      </div>
+      <div class="card" style="width: 20rem;">
+        <div class="card-thumbnail">
+          <figure class="card-img-wrapper">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="" src="img/sample.jpg">
+          </figure>
+          <span class="card-more-text">
+            Hey!Collage of International Study 37期がクールな
+            洋楽でセクシーに踊ってやど祭にグローバルな風を
+            吹かせます!Are you ready?Here we go!
+          </span>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">カードタイトル</h5>
+          <p class="card-text">シンプルな説明文</p>
+          <p class="text-center"><button type="button" class="btn" onclick="location.href='#'">くわしくみる</button>
+          </p>
+
+        </div>
+      </div>
+      <div class="card" style="width: 20rem;">
+        <div class="card-thumbnail">
+          <figure class="card-img-wrapper">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="" src="img/sample.jpg">
+          </figure>
+          <span class="card-more-text">
+            Hey!Collage of International Study 37期がクールな
+            洋楽でセクシーに踊ってやど祭にグローバルな風を
+            吹かせます!Are you ready?Here we go!
+          </span>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">カードタイトル</h5>
+          <p class="card-text">シンプルな説明文</p>
+          <p class="text-center"><button type="button" class="btn" onclick="location.href='#'">くわしくみる</button>
+          </p>
+
+        </div>
+      </div>
+      <div class="card" style="width: 20rem;">
+        <div class="card-thumbnail">
+          <figure class="card-img-wrapper">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="" src="img/sample.jpg">
+          </figure>
+          <span class="card-more-text">
+            Hey!Collage of International Study 37期がクールな
+            洋楽でセクシーに踊ってやど祭にグローバルな風を
+            吹かせます!Are you ready?Here we go!
+          </span>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">カードタイトル</h5>
+          <p class="card-text">シンプルな説明文</p>
+          <p class="text-center"><button type="button" class="btn" onclick="location.href='#'">くわしくみる</button>
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- Card layout-->
+
+
+    
+    <!-- sponsors -->
+    <script>writeWebAd();</script>
+    <!-- sponsors -->
+
+    <!-- footer -->
+    <script>writeFooter();</script>
+    <!-- footer -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
