@@ -1,5 +1,4 @@
 {
-    "background_color": "black",
     "short_name": "やどかり祭",
     "name": "筑波大学やどかり祭",
     "start_url": "./index.html",
@@ -7,5 +6,6 @@
     "icons":[{
         "src": "img/icon_192x192.png",
         "sizes": "192x192"
-      }]
+      }],
+    "background_color": "black"
 }

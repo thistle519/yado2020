@@ -98,33 +98,33 @@
 
   <!-- Jumbotron -->
   <section>
-      <div class="jumbotron overview jumbotron-fluid">
-        <div class="col">
-          <p class="lead">お知らせ</p>
-          <hr>
-          <table style="text-align:right;">
-            <tr>
-              <td>2020年</td>
-              <td>5月</td>
-              <td>29日</td>
-              <td>16:30~21:00</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>30日</td>
-              <td>11:00~21:00</td>
-            </tr>
-          </table>
-          <p>平砂学生宿舎周辺で開催!!</p>
-          <!-- テーマは<ruby>
+    <div class="jumbotron overview jumbotron-fluid">
+      <div class="col">
+        <p class="lead">お知らせ</p>
+        <hr>
+        <table style="text-align:right;">
+          <tr>
+            <td>2020年</td>
+            <td>5月</td>
+            <td>29日</td>
+            <td>16:30~21:00</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td>30日</td>
+            <td>11:00~21:00</td>
+          </tr>
+        </table>
+        <p>平砂学生宿舎周辺で開催!!</p>
+        <!-- テーマは<ruby>
               <rb>百花祭放</rb>
               <rp>（</rp>
               <rt>ひゃっかせいほう</rt>
               <rp>）</rp>
             </ruby>。 -->
-        </div>
       </div>
+    </div>
   </section>
   <!-- Jumbotron -->
 
@@ -315,8 +315,19 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-
-
+  <!-- serviceWorker -->
+  <script>
+    window.addEventListener('load', function () {
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register("/serviceWorker.js")
+          .then(function (registration) {
+            console.log("serviceWorker registed.");
+          }).catch(function (error) {
+            console.warn("serviceWorker error.", error);
+          });
+      }
+    });
+  </script>
 
 </body>
 
