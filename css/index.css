@@ -1,5 +1,6 @@
 .main{
   margin-top: 0;
+  border-top: solid 0px black;
 }
 .jumbotron {
   border-radius: 0rem;
@@ -9,6 +10,9 @@
   font-size: 16px;
 }
 /*---carousel---*/
+.carousel{
+  margin-top: 71px;;
+}
 .carousel-item {
   height: 90vh;
   position: relative;
