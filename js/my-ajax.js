@@ -1,33 +1,39 @@
 function returnTargetBooth(boothData, target) {
   var booth_num = target.substr(5, 2); //numには模擬店番号かステージ番号が入る。1メインステージ2ミニステージ3パフォーマンス会場4平共前ステージ
-console.log(booth_num);
+  booth_num=Number(booth_num)
+  console.log(booth_num+2);
   const amount_booth = Object.keys(boothData).length;
   const pic_name = "NoImage.jpg";
   var boothArray = [];
   for (var i = 0; i < amount_booth; i++) {
+    console.log("DEBUG1:", boothData["shop" + String(i + 1)]["area"]);
+
     if (booth_num == 28) {
       if (
-        boothData["shop" + String(i + 1)]["area"] >= booth_num &&
-        boothData["shop" + String(i + 1)]["area"] <= booth_num + 1
+        Number(boothData["shop" + String(i + 1)]["area"]) >= booth_num &&
+        Number(boothData["shop" + String(i + 1)]["area"]) <= booth_num + 1
       ) {
         boothArray.push(boothData["shop" + String(i + 1)]);
+        console.log("DEBUG2.1:pushed",Number(boothData["shop" + String(i + 1)]["area"]));
       }
     } else {
       if (
-        boothData["shop" + String(i + 1)]["area"] >= booth_num &&
-        boothData["shop" + String(i + 1)]["area"] <= booth_num + 2
+        Number(boothData["shop" + String(i + 1)]["area"]) >= booth_num &&
+        Number(boothData["shop" + String(i + 1)]["area"]) <= booth_num + 2
       ) {
         boothArray.push(boothData["shop" + String(i + 1)]);
+        console.log("DEBUG2.1:pushed",Number(boothData["shop" + String(i + 1)]["area"]));
       }
     }
   }
-  content_head = '<div class="container-fluid">' + '<div class="row ">';
-  content_bottom =
+  CONTENT_HEAD = '<div class="container-fluid">' + '<div class="row ">';
+  CONTENT_BOTTOM =
     '  <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12">' +
     '    <a class="js-modal-close" href="">閉じる</a>' +
     "   </div>" +
     "  </div>" +
     "</div>";
+
   content = "";
   for (var i = 0; i < boothArray.length; i++) {
     content +=
@@ -55,8 +61,8 @@ console.log(booth_num);
       "<hr>" +
       " </div>";
   }
-  console.log("DEBUG:",content);
-  return content_head + content + content_bottom;
+  console.log("DEBUG3:", content);
+  return CONTENT_HEAD + content + CONTENT_BOTTOM;
 }
 function outputStage(data, stageName) {
   switch (stageName) {
@@ -108,6 +114,6 @@ $(function(e) {
       });
     })
     .fail(function(boothData, stageData) {
-      console.log("fail get JSON");
+      console.log("ERROR2:fail get JSON");
     });
 });
