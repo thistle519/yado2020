@@ -1,0 +1,11 @@
+<Files ~ "^\.(htaccess|htpasswd)$">
+deny from all
+</Files>
+Options -Indexes
+ErrorDocument 404 https://www.stb.tsukuba.ac.jp/~yadokari/
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^(stb\.tsukuba\.ac\.jp/~yadokari)(:80)? [NC]
+RewriteRule ^(.*) https://www.stb.tsukuba.ac.jp/~yadokari/$1 [R=301,L]
+DirectoryIndex index.html       
+Redirect permanent https://www.stb.tsukuba.ac.jp/~yadokari/ https://yadosai.com/
+order deny,allow
