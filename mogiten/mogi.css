@@ -1,3 +1,6 @@
+.body{
+  background-color: hsl(38,54%,72%);
+}
 .my_mogi-nav::before {
   content: "";
   display: inline-block;
