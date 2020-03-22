@@ -1,5 +1,5 @@
-body{
-  background-color: hsl(38,54%,72%);
+body {
+  background-color: hsl(38, 54%, 72%);
 }
 .my_mogi-nav::before {
   content: "";
@@ -15,10 +15,13 @@ body{
   border-bottom: 0.5px solid #b50721;
 }
 .my_nav-active:hover {
-    border-top: 0.5px solid #b50721;
-    border-bottom: 0.5px solid #b50721;
-  }
+  border-top: 0.5px solid #b50721;
+  border-bottom: 0.5px solid #b50721;
+}
 
 .my_is-border {
   border: solid 4px black;
+}
+.my_page_title {
+  color: black;
 }
