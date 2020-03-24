@@ -9,13 +9,7 @@ body {
 .no-active {
   color: rgb(100, 100, 100) !important;
 }
-.my_page-title {
-  color: white;
-  font-weight: bolder;
-  font-size: 30px;
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
+
 .row {
   margin: 0;
 }
@@ -59,8 +53,23 @@ body {
 }
 
 /* navigation */
+.my_jumbotron {
+  padding:1em 1em;
+  background-image: url("../img/jumbotron_test2.jpg");
+  background-size: cover;
+  background-position: center 60%;
+  position: relative;
+}
 
-/*hero*/
+.my_page-title {
+  color: white;
+  /* font-weight: bolder; */
+  font-size: 30px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+
 
 /*汎用-tile*/
 .tile {
