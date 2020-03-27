@@ -1,0 +1,47 @@
+.character {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* body {
+  /* position: absolute; 
+  top: 50x
+} */
+
+.shinagawa_san {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70vw;
+}
+.center {
+  text-align: center;
+}
+
+.parents {
+  position: fixed;
+  margin-top: 4rem;
+  width: 100vw;
+  height: 100vh;
+}
+#mycanvas {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: auto !important;
+  height: 100vh !important;
+}
+
+#modal {
+  position: absolute;
+  top: 40vh;
+  left: 0;
+}
+
+.main {
+  border-top: none;
+  margin-top: 0;
+  margin-bottom: 5em;
+}
