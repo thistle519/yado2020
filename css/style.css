@@ -63,7 +63,7 @@ body {
 
 .my_page-title {
   color: white;
-  font-weight: bolder;
+  /* font-weight: bolder; */
   font-size: 30px;
   margin-top: 1em;
   margin-bottom: 1em;
@@ -163,9 +163,6 @@ body {
 }
 .card:hover .card-more-text {
   opacity: 1;
-}
-.card-text{
-  font-size: smaller;
 }
 /*card-layout*/
 
