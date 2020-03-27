@@ -66,7 +66,9 @@
   <script>writeHeader();</script>
   <!-- navigation -->
   <section class="main">
-    <p class="my_page-title text-center">会場マップ</p>
+    <!-- Jumbotron -->
+    <script>writeJumbotron("マップ");//第一引数:ページタイトル(必須),第二引数(任意):背景画像ファイル名(パス無し)</script>
+    <!-- Jumbotron -->
 
     <!-- 汎用タイル -->
     <div class="container-fluid">
@@ -74,7 +76,6 @@
       <div class="row justify-content-center">
         <div class="col-11 col-md tile is-round" style="background-color: #eee;">
           <section class="tile-content">
-            <p class="tile-title text-center">会場マップ</p>
             <p class="text-center">マップは拡大でき、タップで詳細を見ることができます。
             </p>
             <div id="imgContainer" style="height: 500px;margin:0 auto;">

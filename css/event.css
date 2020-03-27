@@ -3,6 +3,9 @@ table.card-text {
   vertical-align: baseline;
   text-align: right;
 }
+.tile{
+  margin-bottom: 1em;
+}
 .bd-placeholder-img {
   width: 100%;
   height: 30vh;

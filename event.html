@@ -63,15 +63,17 @@
   <!-- navigation -->
 
 
-  <section class="main" style="margin-top: 100px; border-top: none;">
+  <section class="main">
     <!--ナビゲーションバーの次のセクションではmargin-top:50px;指定しないと要素が被る-->
     <!-- Card layout-->
     <!-- カードレイアウトページのタイトル　from tile colomn -->
+    <!-- Jumbotron -->
+    <script>writeJumbotron("企画一覧");//第一引数:ページタイトル(必須),第二引数(任意):背景画像ファイル名(パス無し)</script>
+    <!-- Jumbotron -->
     <div class="container-fluid">
       <div class="row justify-content-center">
-        <div class="col-11 col-md tile is-round is-bg-white">
+        <div class="col-11 col-md-10 col-lg-8 tile is-round is-bg-white">
           <section class="tile-content">
-            <p class="text-center tile-title col-title">企画一覧</p>
             <p class="text-center">画像をマウスオーバーかタップで詳細をよむことができます。<br>
               お申し込みは各種申請にあります。</p>
             <p class="text-center"><button type="button" class="btn" onclick="location.href='apply.html'">各種申請へ</button>
@@ -79,277 +81,160 @@
 
           </section>
         </div>
-      </div>
-      <!-- カードレイアウトページのタイトル -->
+        <!-- カードレイアウトページのタイトル -->
 
-      <!-- cards-->
-      <div class="row justify-content-center">
-        <!-- 縁日 -->
-        <div class="card" style="width: 20rem;">
-          <div class="card-thumbnail">
-            <figure class="card-img-wrapper">
-              <img class="bd-placeholder-img card-img-top" width="100%" height="" src="img/kikaku-ennnichi2.jpg">
-            </figure>
-            <span class="card-more-text" id="ennichi">
-              射的、水ヨーヨー釣り、迷路などの子供向けのものだけでなく、ストラックアウトや巨大だるま落としなどの体を使うものまであります！<br>
-              家族連れはもちろん、模擬店で食べ過ぎて運動したいというあなたも！豪華景品？ディズニーペアチケット？を用意してお待ちしています。
-            </span>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">縁日</h5>
-            <table class="card-text">
-              <tr>
-                <td>日時:</td>
-                <td>前夜祭 17:00~10:30</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>本祭 11:00~20:30</td>
-              </tr>
-              <tr>
-                <td>場所:</td>
-                <td>メインステージ横</td>
-              </tr>
-            </table>
-            <p class="card-text">※15:30~17:35は休止とさせていただきます。</p>
-          </div>
-        </div>
-        <!-- 野外ライブ -->
-        <div class="card" style="width: 20rem;">
-          <div class="card-thumbnail">
-            <figure class="card-img-wrapper">
-              <img class="bd-placeholder-img card-img-top" width="100%" height="" src="img/kikaku-yagailive.jpg">
-            </figure>
-            <span class="card-more-text">
-              宿舎祭の始まりを彩るのが、野外ライブです!<br class="mobile-br">
-              演奏を是非体感しに来ませんか?
-            </span>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">野外ライブ</h5>
-            <table class="card-text">
-              <tr>
-                <td>日時:</td>
-                <td>前夜祭 16:30~20:40</td>
-              </tr>
-              <tr>
-                <td>場所:</td>
-                <td>メインステージ</td>
-              </tr>
-            </table>
-            <p class="text-center"><button type="button" class="btn" onclick="location.href='#'"><i
-                  class="fas fa-exclamation-triangle"></i>タイムテーブル</button></p>
-          </div>
-        </div>
-        <!-- トーチ -->
-        <div class="card" style="width: 20rem;">
-          <div class="card-thumbnail">
-            <figure class="card-img-wrapper">
-              <img class="bd-placeholder-img card-img-top" width="100%" height="" src="img/kikaku-to-chi.jpg">
-            </figure>
-            <span class="card-more-text">
-              曲に合わせて火をまわす！まわす！まわす！まわしているのは祭りの主役１年生！<br>
-              最近何かと話題のトーチトワリングですが、安全第一、本当の炎ではなく皆さんを感動の炎で包み込みます！！
-            </span>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">トーチ</h5>
-            <p class="card-text"> 今年もみなさんお待ちかね！前夜祭のフィナーレといえばトーチトワリング！</p>
-            <table class="card-text">
-              <tr>
-                <td>日時:</td>
-                <td>前夜祭 21:15~21:20</td>
-              </tr>
-              <tr>
-                <td>場所:</td>
-                <td>平砂共用棟前ステージ</td>
-              </tr>
-            </table>
-          </div>
-        </div>
-        <!-- 火文字 -->
-        <div class="card" style="width: 20rem;">
-          <div class="card-thumbnail">
-            <figure class="card-img-wrapper">
-              <img class="bd-placeholder-img card-img-top" width="100%" height="" src="img/kikaku-himoji.jpg">
-            </figure>
-            <span class="card-more-text">
-              火文字ってなーんだ、と思ったそこの貴方！<br>
-              煌々と光り輝く火で前夜祭の夜空を描く、いわば人生のスペクトラムショー！
-            </span>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">火文字</h5>
-            <p class="card-text">前夜祭のフィナーレと言えばなーんだ！！！そう！火文字です！<br>
-              みんな来てねー！</p>
-            <table class="card-text">
-              <tr>
-                <td>日時:</td>
-                <td>前夜祭 21:20~21:30</td>
-              </tr>
-              <tr>
-                <td>場所:</td>
-                <td>平砂共用棟前ステージ</td>
-              </tr>
-            </table>
-          </div>
-        </div>
-        <!-- ダンス -->
-        <div class="card" style="width: 20rem;">
-          <div class="card-body">
-            <h5 class="card-title">ダンス</h5>
-            <p class="card-text">毎年大きな盛り上がりをみせるダンス企画！<br>
-              各団体圧巻のパフォーマンスを観にみなさんぜひお越しください！！<br>
-            </p>
-            <ul class="card-text">-出場団体-
-              <li>realjam</li>
-              <li>斬桐舞</li>
-              <li>purplume</li>
-              <li>ひらがなつくば</li>
-              <li>Scramble</li>
-            </ul>
-            <table class="card-text">
-              <tr>
-                <td>日時:</td>
-                <td>本祭 13:30~15:40</td>
-              </tr>
-              <tr>
-                <td>場所:</td>
-                <td>メインステージ</td>
-              </tr>
-            </table>
-            <p class="text-center"><button type="button" class="btn" onclick="location.href='#'"><i
-                  class="fas fa-exclamation-triangle"></i>タイムテーブル</button></p>
-          </div>
-        </div>
-
-        <!-- クイズ -->
-        <div class="card" style="width: 20rem;">
-          <div class="card-body">
-            <h5 class="card-title">クイズ</h5>
-            <p class="card-text">大学生クイズは、気軽に参加できるイベントとして新入生同士はもちろん学年や学類の壁を超えて3人１組のチームでクイズを解いて優勝を争う企画です。<br>
-              3人で協力して回答を作ったり、ミニゲームで回答権を奪いあったり…とにかくアツい、筑波のクイズ王を目指す企画です!!
-            </p>
-            <table class="card-text">
-              <tr>
-                <td>日時:</td>
-                <td>本祭 16:05~17:20</td>
-              </tr>
-              <tr>
-                <td>場所:</td>
-                <td>メインステージ</td>
-              </tr>
-            </table>
-          </div>
-        </div>
-        <!-- ミニステージ -->
-        <div class="card" style="width: 20rem;">
-          <div class="card-body">
-            <h5 class="card-title">ミニステージ</h5>
-            <p class="card-text">ミニステージでは筑波大学内の様々な団体によるパフォーマンスが行われます。<br>
-              ミニステージにはドリンク販売所と休憩所があり、気軽に立ち寄れるくつろぎの場を提供しています。<br>
-            </p>
-            <table class="card-text">
-              <tr>
-                <td>日時:</td>
-                <td>前夜祭 18:00~21:00</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>本祭 12:00~19:00</td>
-              </tr>
-              <tr>
-                <td>場所:</td>
-                <td>平砂4・6号棟間</td>
-              </tr>
-            </table>
-            <p class="text-center"><button type="button" class="btn" onclick="location.href='#'"><i
-                  class="fas fa-exclamation-triangle"></i>タイムテーブル</button></p>
-          </div>
-        </div>
-        <!-- ストリートパフォーマンス -->
-        <div class="card" style="width: 20rem;">
-          <div class="card-body">
-            <h5 class="card-title">ストリートパフォーマンス</h5>
-            やどかりストリートパフォーマンス(やどかりSP)では筑波大学内の様々な団体によるパフォーマンスが行われます。<br>
-            やどかりSPでは祭全体を活気づけ、出演者と観客が一体になって楽しめます。ぜひお立ち寄りください!!
-            </p>
-            <table class="card-text">
-              <tr>
-                <td>日時:</td>
-                <td>前夜祭 18:00~21:00</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>本祭 12:00~19:00</td>
-              </tr>
-              <tr>
-                <td>場所:</td>
-                <td>平砂共用棟前</td>
-              </tr>
-            </table>
-            <p class="text-center"><button type="button" class="btn" onclick="location.href='#'"><i
-                  class="fas fa-exclamation-triangle"></i>タイムテーブル</button></p>
-          </div>
-        </div>
-        <!-- 御輿 -->
-        <div class="card" style="width: 20rem;">
-          <div class="card-thumbnail">
-            <figure class="card-img-wrapper">
-              <img class="bd-placeholder-img card-img-top" width="100%" height="" src="img/kikaku-mikoshi.jpg">
-            </figure>
-            <span class="card-more-text">
-              祭りといえば、やっぱり御輿！！！<br>
-              やどかり祭最大規模を誇るこの企画。<br>
-              毎年、学群・学類ごとに制作した個性豊かな御輿が祭り会場に現れます。<br>
-              今年はどのような御輿がやどかり祭に登場するのでしょうか？？お楽しみに!!
-            </span>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">御輿</h5>
-            <p class="card-text">
-              御輿がメインストリートを縦断する迫力満点の練り歩きと、趣向を凝らしたパフォーマンスは必見です！
-            </p>
-            <strong>展示</strong>
-            <table class="card-text">
-              <tr>
-                <td>日時:</td>
-                <td>本祭 9:30~15:45</td>
-              </tr>
-              <tr>
-                <td>場所:</td>
-                <td>平砂共用棟前</td>
-              </tr>
-            </table>
-
-            <strong>練り歩き・パフォーマンス</strong>
-            <table class="card-text">
-              <tr>
-                <td>日時:</td>
-                <td>本祭 15:45~17:35</td>
-              </tr>
-              <tr>
-                <td>場所:
-                <td>メインストリート・<br>
-                  グローバルヴィレッジ前<br>パフォーマンス会場</td>
-              </tr>
-            </table>
-            <p class="text-center"><button type="button" class="btn" onclick="location.href='apply.html'"><i
-                  class="fas fa-exclamation-triangle"></i>チーム紹介</button>
-            </p>
-          </div>
-        </div>
-        <!-- やどカラ -->
-        <div class="card" style="width: 20rem;">
-          <div class="card-thumbnail">
+        <!-- cards-->
+        <div class="row justify-content-center">
+          <!-- 縁日 -->
+          <div class="card" style="width: 20rem;">
+            <div class="card-thumbnail">
+              <figure class="card-img-wrapper">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="" src="img/kikaku-ennnichi2.jpg">
+              </figure>
+              <span class="card-more-text" id="ennichi">
+                射的、水ヨーヨー釣り、迷路などの子供向けのものだけでなく、ストラックアウトや巨大だるま落としなどの体を使うものまであります！<br>
+                家族連れはもちろん、模擬店で食べ過ぎて運動したいというあなたも！豪華景品？ディズニーペアチケット？を用意してお待ちしています。
+              </span>
+            </div>
             <div class="card-body">
-              <h5 class="card-title">やどカラ</h5>
-              <p class="card-text">筑波の学生に馴染み深いカラオケを題材として取り上げ、学内の方に積極的に参加してもらえるステージ企画です。<br>
-                各々の思いがこもった熱い歌声が会場全体に響き渡って盛り上がること間違いなし！</p>
+              <h5 class="card-title">縁日</h5>
               <table class="card-text">
                 <tr>
                   <td>日時:</td>
-                  <td>本祭 12:25~13:20</td>
+                  <td>前夜祭 17:00~10:30</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>本祭 11:00~20:30</td>
+                </tr>
+                <tr>
+                  <td>場所:</td>
+                  <td>メインステージ横</td>
+                </tr>
+              </table>
+              <p class="card-text">※15:30~17:35は休止とさせていただきます。</p>
+            </div>
+          </div>
+          <!-- 野外ライブ -->
+          <div class="card" style="width: 20rem;">
+            <div class="card-thumbnail">
+              <figure class="card-img-wrapper">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="" src="img/kikaku-yagailive.jpg">
+              </figure>
+              <span class="card-more-text">
+                宿舎祭の始まりを彩るのが、野外ライブです!<br class="mobile-br">
+                演奏を是非体感しに来ませんか?
+              </span>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">野外ライブ</h5>
+              <table class="card-text">
+                <tr>
+                  <td>日時:</td>
+                  <td>前夜祭 16:30~20:40</td>
+                </tr>
+                <tr>
+                  <td>場所:</td>
+                  <td>メインステージ</td>
+                </tr>
+              </table>
+              <p class="text-center"><button type="button" class="btn" onclick="location.href='#'"><i
+                    class="fas fa-exclamation-triangle"></i>タイムテーブル</button></p>
+            </div>
+          </div>
+          <!-- トーチ -->
+          <div class="card" style="width: 20rem;">
+            <div class="card-thumbnail">
+              <figure class="card-img-wrapper">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="" src="img/kikaku-to-chi.jpg">
+              </figure>
+              <span class="card-more-text">
+                曲に合わせて火をまわす！まわす！まわす！まわしているのは祭りの主役１年生！<br>
+                最近何かと話題のトーチトワリングですが、安全第一、本当の炎ではなく皆さんを感動の炎で包み込みます！！
+              </span>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">トーチ</h5>
+              <p class="card-text"> 今年もみなさんお待ちかね！前夜祭のフィナーレといえばトーチトワリング！</p>
+              <table class="card-text">
+                <tr>
+                  <td>日時:</td>
+                  <td>前夜祭 21:15~21:20</td>
+                </tr>
+                <tr>
+                  <td>場所:</td>
+                  <td>平砂共用棟前ステージ</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <!-- 火文字 -->
+          <div class="card" style="width: 20rem;">
+            <div class="card-thumbnail">
+              <figure class="card-img-wrapper">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="" src="img/kikaku-himoji.jpg">
+              </figure>
+              <span class="card-more-text">
+                火文字ってなーんだ、と思ったそこの貴方！<br>
+                煌々と光り輝く火で前夜祭の夜空を描く、いわば人生のスペクトラムショー！
+              </span>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">火文字</h5>
+              <p class="card-text">前夜祭のフィナーレと言えばなーんだ！！！そう！火文字です！<br>
+                みんな来てねー！</p>
+              <table class="card-text">
+                <tr>
+                  <td>日時:</td>
+                  <td>前夜祭 21:20~21:30</td>
+                </tr>
+                <tr>
+                  <td>場所:</td>
+                  <td>平砂共用棟前ステージ</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <!-- ダンス -->
+          <div class="card" style="width: 20rem;">
+            <div class="card-body">
+              <h5 class="card-title">ダンス</h5>
+              <p class="card-text">毎年大きな盛り上がりをみせるダンス企画！<br>
+                各団体圧巻のパフォーマンスを観にみなさんぜひお越しください！！<br>
+              </p>
+              <ul class="card-text">-出場団体-
+                <li>realjam</li>
+                <li>斬桐舞</li>
+                <li>purplume</li>
+                <li>ひらがなつくば</li>
+                <li>Scramble</li>
+              </ul>
+              <table class="card-text">
+                <tr>
+                  <td>日時:</td>
+                  <td>本祭 13:30~15:40</td>
+                </tr>
+                <tr>
+                  <td>場所:</td>
+                  <td>メインステージ</td>
+                </tr>
+              </table>
+              <p class="text-center"><button type="button" class="btn" onclick="location.href='#'"><i
+                    class="fas fa-exclamation-triangle"></i>タイムテーブル</button></p>
+            </div>
+          </div>
+
+          <!-- クイズ -->
+          <div class="card" style="width: 20rem;">
+            <div class="card-body">
+              <h5 class="card-title">クイズ</h5>
+              <p class="card-text">大学生クイズは、気軽に参加できるイベントとして新入生同士はもちろん学年や学類の壁を超えて3人１組のチームでクイズを解いて優勝を争う企画です。<br>
+                3人で協力して回答を作ったり、ミニゲームで回答権を奪いあったり…とにかくアツい、筑波のクイズ王を目指す企画です!!
+              </p>
+              <table class="card-text">
+                <tr>
+                  <td>日時:</td>
+                  <td>本祭 16:05~17:20</td>
                 </tr>
                 <tr>
                   <td>場所:</td>
@@ -358,40 +243,156 @@
               </table>
             </div>
           </div>
-        </div>
+          <!-- ミニステージ -->
+          <div class="card" style="width: 20rem;">
+            <div class="card-body">
+              <h5 class="card-title">ミニステージ</h5>
+              <p class="card-text">ミニステージでは筑波大学内の様々な団体によるパフォーマンスが行われます。<br>
+                ミニステージにはドリンク販売所と休憩所があり、気軽に立ち寄れるくつろぎの場を提供しています。<br>
+              </p>
+              <table class="card-text">
+                <tr>
+                  <td>日時:</td>
+                  <td>前夜祭 18:00~21:00</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>本祭 12:00~19:00</td>
+                </tr>
+                <tr>
+                  <td>場所:</td>
+                  <td>平砂4・6号棟間</td>
+                </tr>
+              </table>
+              <p class="text-center"><button type="button" class="btn" onclick="location.href='#'"><i
+                    class="fas fa-exclamation-triangle"></i>タイムテーブル</button></p>
+            </div>
+          </div>
+          <!-- ストリートパフォーマンス -->
+          <div class="card" style="width: 20rem;">
+            <div class="card-body">
+              <h5 class="card-title">ストリートパフォーマンス</h5>
+              やどかりストリートパフォーマンス(やどかりSP)では筑波大学内の様々な団体によるパフォーマンスが行われます。<br>
+              やどかりSPでは祭全体を活気づけ、出演者と観客が一体になって楽しめます。ぜひお立ち寄りください!!
+              </p>
+              <table class="card-text">
+                <tr>
+                  <td>日時:</td>
+                  <td>前夜祭 18:00~21:00</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>本祭 12:00~19:00</td>
+                </tr>
+                <tr>
+                  <td>場所:</td>
+                  <td>平砂共用棟前</td>
+                </tr>
+              </table>
+              <p class="text-center"><button type="button" class="btn" onclick="location.href='#'"><i
+                    class="fas fa-exclamation-triangle"></i>タイムテーブル</button></p>
+            </div>
+          </div>
+          <!-- 御輿 -->
+          <div class="card" style="width: 20rem;">
+            <div class="card-thumbnail">
+              <figure class="card-img-wrapper">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="" src="img/kikaku-mikoshi.jpg">
+              </figure>
+              <span class="card-more-text">
+                祭りといえば、やっぱり御輿！！！<br>
+                やどかり祭最大規模を誇るこの企画。<br>
+                毎年、学群・学類ごとに制作した個性豊かな御輿が祭り会場に現れます。<br>
+                今年はどのような御輿がやどかり祭に登場するのでしょうか？？お楽しみに!!
+              </span>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">御輿</h5>
+              <p class="card-text">
+                御輿がメインストリートを縦断する迫力満点の練り歩きと、趣向を凝らしたパフォーマンスは必見です！
+              </p>
+              <strong>展示</strong>
+              <table class="card-text">
+                <tr>
+                  <td>日時:</td>
+                  <td>本祭 9:30~15:45</td>
+                </tr>
+                <tr>
+                  <td>場所:</td>
+                  <td>平砂共用棟前</td>
+                </tr>
+              </table>
 
-        <!-- ゆかコン -->
-        <div class="card" style="width: 20rem;">
-          <div class="card-thumbnail">
-            <figure class="card-img-wrapper">
-              <img class="bd-placeholder-img card-img-top" width="100%" height="" src="img/kikaku-yukacon.jpg">
-            </figure>
-            <span class="card-more-text">
-              本祭の最後に有志の一年生グループがメインステージでパフォーマンスをします！<br>
-            </span>
+              <strong>練り歩き・パフォーマンス</strong>
+              <table class="card-text">
+                <tr>
+                  <td>日時:</td>
+                  <td>本祭 15:45~17:35</td>
+                </tr>
+                <tr>
+                  <td>場所:
+                  <td>メインストリート・<br>
+                    グローバルヴィレッジ前<br>パフォーマンス会場</td>
+                </tr>
+              </table>
+              <p class="text-center"><button type="button" class="btn" onclick="location.href='apply.html'"><i
+                    class="fas fa-exclamation-triangle"></i>チーム紹介</button>
+              </p>
+            </div>
           </div>
-          <div class="card-body">
-            <h5 class="card-title">ゆかコン</h5>
-            <p class="card-text">やどかり祭を締めくくる、最後の一大企画!<br>
-              毎年大きな盛り上がりを見せています！
-            </p>
-            <table class="card-text">
-              <tr>
-                <td>日時:</td>
-                <td>本祭 18:45~20:10</td>
-              </tr>
-              <tr>
-                <td>場所:</td>
-                <td>メインステージ</td>
-              </tr>
-            </table>
-            <p class="text-center"><button type="button" class="btn" onclick="location.href='apply.html'"><i
-                  class="fas fa-exclamation-triangle"></i>チーム紹介</button>
-            </p>
+          <!-- やどカラ -->
+          <div class="card" style="width: 20rem;">
+            <div class="card-thumbnail">
+              <div class="card-body">
+                <h5 class="card-title">やどカラ</h5>
+                <p class="card-text">筑波の学生に馴染み深いカラオケを題材として取り上げ、学内の方に積極的に参加してもらえるステージ企画です。<br>
+                  各々の思いがこもった熱い歌声が会場全体に響き渡って盛り上がること間違いなし！</p>
+                <table class="card-text">
+                  <tr>
+                    <td>日時:</td>
+                    <td>本祭 12:25~13:20</td>
+                  </tr>
+                  <tr>
+                    <td>場所:</td>
+                    <td>メインステージ</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
           </div>
-        </div>
-        <!-- 表彰式 -->
-<!-- 
+
+          <!-- ゆかコン -->
+          <div class="card" style="width: 20rem;">
+            <div class="card-thumbnail">
+              <figure class="card-img-wrapper">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="" src="img/kikaku-yukacon.jpg">
+              </figure>
+              <span class="card-more-text">
+                本祭の最後に有志の一年生グループがメインステージでパフォーマンスをします！<br>
+              </span>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">ゆかコン</h5>
+              <p class="card-text">やどかり祭を締めくくる、最後の一大企画!<br>
+                毎年大きな盛り上がりを見せています！
+              </p>
+              <table class="card-text">
+                <tr>
+                  <td>日時:</td>
+                  <td>本祭 18:45~20:10</td>
+                </tr>
+                <tr>
+                  <td>場所:</td>
+                  <td>メインステージ</td>
+                </tr>
+              </table>
+              <p class="text-center"><button type="button" class="btn" onclick="location.href='apply.html'"><i
+                    class="fas fa-exclamation-triangle"></i>チーム紹介</button>
+              </p>
+            </div>
+          </div>
+          <!-- 表彰式 -->
+          <!-- 
         <div class="card" style="width: 20rem;">
           <div class="card-thumbnail">
           </div>
@@ -411,29 +412,31 @@
             </table>
           </div>
         </div> -->
-        <!-- 花火 -->
-        <div class="card" style="width: 20rem;">
-          <div class="card-thumbnail">
-            <figure class="card-img-wrapper">
-              <img class="bd-placeholder-img card-img-top" width="100%" height="" src="img/kikaku-hanabi.jpg">
-            </figure>
-            <span class="card-more-text">
-                            花火を大切な仲間と共に見て宿舎祭を最高の思い出にしませんか？
-            </span>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">花火</h5>
-            <p class="card-text">令和2年度の宿舎祭のフィナーレを飾るのは、美しくも迫力のある花火です。<br></p>
-            <table class="card-text">
-              <tr>
-                <td>日時:</td>
-                <td>本祭 20:50~</td>
-              </tr>
-            </table>
+          <!-- 花火 -->
+          <div class="card" style="width: 20rem;">
+            <div class="card-thumbnail">
+              <figure class="card-img-wrapper">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="" src="img/kikaku-hanabi.jpg">
+              </figure>
+              <span class="card-more-text">
+                花火を大切な仲間と共に見て宿舎祭を最高の思い出にしませんか？
+              </span>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">花火</h5>
+              <p class="card-text">令和2年度の宿舎祭のフィナーレを飾るのは、美しくも迫力のある花火です。<br></p>
+              <table class="card-text">
+                <tr>
+                  <td>日時:</td>
+                  <td>本祭 20:50~</td>
+                </tr>
+              </table>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
   </section>
   <!-- Card layout-->
 
