@@ -17,7 +17,9 @@
   margin-right: auto;
   width: 10em;
 }
-
+#BOSS{
+  color: white;
+}
 #BOSS::before {
   content: "";
   display: inline-block;
