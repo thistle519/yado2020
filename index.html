@@ -115,25 +115,10 @@
       <div class="col">
         <p class="lead">重要なお知らせ</p>
         <hr>
-        <table style="text-align:right;">
-          <tr>
-            <td>2020年</td>
-            <td>5月</td>
-            <td>29日</td>
-            <td>16:30~21:00</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td>30日</td>
-            <td>11:00~21:00</td>
-          </tr>
-        </table>
-        <p>平砂学生宿舎周辺で開催!!</p>
-        <hr>
         <p>※「<i class="fas fa-exclamation-triangle"></i>」は準備中のコンテンツです。</p>
         <hr>
-        <p id="COVID"><a href="PDF/COVID-19_200328.pdf" id="COVID-LINK"> 新型コロナウイルスに対する対応について<br class="mobile-br">(3/28更新)</a> </p>
+        <p id="COVID"><a href="PDF/COVID-19_200328.pdf" id="COVID-LINK"> 新型コロナウイルスに対する対応について<br
+              class="mobile-br">(3/28更新)</a> </p>
         <!-- テーマは<ruby>
               <rb>百花祭放</rb>
               <rp>（</rp>
@@ -231,16 +216,39 @@
       <div class="row justify-content-center" style="margin-top:0">
         <div class="col-11 col-md tile is-round is-bg-white">
           <section class="tile-content">
+            <p class="text-center tile-title col-title">日程</p>
+            <div class="col" style="margin-bottom: 1em;">
+              <table style="text-align:right;">
+                <tr>
+                  <td>2020年</td>
+                  <td>5月</td>
+                  <td>29日</td>
+                  <td>16:30~21:00</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>30日</td>
+                  <td>11:00~21:00</td>
+                </tr>
+              </table>
+            </div>
+
+          </section>
+          <section class="tile-content">
+
             <p class="text-center tile-title col-title">アクセス</p>
-            <p><strong>公共交通機関でお越しの場合</strong><br>
-              大学循環バス天久保二丁目から徒歩3分<br>
-              平砂学生宿舎、グローバルヴィレッジ周辺</p>
-            <p><strong>自転車・車でお越しの場合</strong><br>
-              駐輪場・駐車場をご用意しております。<br>
-              また、会場周辺では<a href="info.html#traffic">交通規制</a>が行われております。<br>
-              ご理解とご協力をお願い申し上げます。<br>
-              <p class="text-center"><button type="button" class="btn"
-                  onclick="location.href='./access.html'">くわしくみる</button></p>
+            <div class="col">
+              <p><strong>公共交通機関でお越しの場合</strong><br>
+                大学循環バス天久保二丁目から徒歩3分<br>
+                平砂学生宿舎、グローバルヴィレッジ周辺</p>
+              <p><strong>自転車・車でお越しの場合</strong><br>
+                駐輪場・駐車場をご用意しております。<br>
+                また、会場周辺では<a href="info.html#traffic">交通規制</a>が行われております。<br>
+                ご理解とご協力をお願い申し上げます。<br>
+                <p class="text-center"><button type="button" class="btn"
+                    onclick="location.href='./access.html'">くわしくみる</button></p>
+            </div>
 
           </section>
         </div>
@@ -252,8 +260,8 @@
             <p>ことしで46回を迎える、筑波大学で毎年春に開催される、<br><strong>新入生が主役</strong>のお祭りです。</p>
             <!-- <p class="text-center"><button type="button" class="btn"
                 onclick="location.href='./about.html'">くわしくみる</button></p> -->
-            <p class="text-center"><button type="button" class="btn" onclick="location.href='about.html'"><i
-                  class="fas fa-exclamation-triangle"></i>準備中</button></p>
+            <p class="text-center"><button type="button" class="btn"
+                onclick="location.href='about.html'">くわしくみる</button></p>
           </section>
         </div>
       </div>
@@ -340,7 +348,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-    
+
   <!-- serviceWorker -->
   <script>
     window.addEventListener('load', function () {
