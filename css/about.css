@@ -19,6 +19,7 @@
 }
 #BOSS{
   color: white;
+  font-size: 150%;
 }
 #BOSS::before {
   content: "";
