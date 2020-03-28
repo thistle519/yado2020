@@ -1,3 +1,16 @@
+#COVID{
+  border :solid #b50721 3px;
+  background-color: hsl(38,54%,72%);
+  font-weight: bolder;
+  padding: 5px;
+}
+#COVID-LINK{
+  color:hsl(199,84%,19%);
+}
+
+
+
+
 .main{
   margin-top: 0;
   border-top: solid 0px black;
