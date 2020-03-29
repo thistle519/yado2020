@@ -3,6 +3,9 @@ table.card-text {
   vertical-align: baseline;
   text-align: right;
 }
+.card-more-text{
+  width: 70%;
+}
 .tile{
   margin-bottom: 1em;
 }
@@ -11,8 +14,8 @@ table.card-text {
   height: 30vh;
   object-fit: cover;
 }
-#ennichi {
-  font-size: 12px;
+.my_text-mini {
+  font-size: small;
 }
 @media (max-width: 420px) {
   #ennichi {
