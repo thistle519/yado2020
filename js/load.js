@@ -18,15 +18,7 @@ const header = `<div class="fixed-top">
     </div>
   </nav>
 </div>`;
-const jumbotron = ` <!-- Jumbotron -->
- <section>
-    <div class="jumbotron my_jumbotron jumbotron-fluid" style="background-image: url(./img/${picture_name});">
-      <div class="container">
-        <p class="my_page-title text-center">${page_title}</p>
-      </div>
-    </div>
-  </section>
-  <!-- Jumbotron -->`;
+
 const footer = `<section class="footer">
   <div class="row justify-content-center" id="footer-row">
     <div class="col-md-6 footer-left">
@@ -114,6 +106,15 @@ function writeJumbotron(page_title, picture_name) {
   if (picture_name == undefined) {
     picture_name = default_pic_name;
   }
+  const jumbotron = ` <!-- Jumbotron -->
+ <section>
+    <div class="jumbotron my_jumbotron jumbotron-fluid" style="background-image: url(./img/${picture_name});">
+      <div class="container">
+        <p class="my_page-title text-center">${page_title}</p>
+      </div>
+    </div>
+  </section>
+  <!-- Jumbotron -->`;
   document.write(jumbotron);
   console.log("jumbotron");
 }
@@ -124,5 +125,6 @@ function writeWebAd() {
 }
 
 function writeFooter() {
+  document.write(footer);
   console.log("footer");
 }
